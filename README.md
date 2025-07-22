@@ -43,5 +43,5 @@ Make sure you have the following installed:
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/apartment-listings-app.git
+git clone https://github.com/shwehy/apartment-listing-app.git
 cd apartment-listings-app
