@@ -21,7 +21,7 @@ This is a full-stack apartment listings app built for the Nawy Software Engineer
 ### 1. Clone and Run
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/apartment-listing-app.git
+git clone https://github.com/shwehy/apartment-listing-app.git
 cd apartment-listing-app
 docker-compose up --build
 
