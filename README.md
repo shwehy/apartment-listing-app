@@ -8,7 +8,7 @@ A modern, full-stack apartment listing web application where users can view, add
 
 -  Apartment listing with photo, area, project, and details
 -  Search & filter by unit name, unit number, or project
--  Add, ✏️ Edit, and ❌ Delete apartments
+-  Add, Edit, and  Delete apartments
 -  Fully responsive and mobile-friendly design
 -  Dockerized: runs backend, frontend, and MongoDB with one command
 -  Built with Tailwind CSS for fast and consistent styling
