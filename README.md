@@ -59,13 +59,14 @@ git clone https://github.com/shwehy/apartment-listing-app.git
 cd apartment-listings-app
 docker-compose up --build
 
----
+```
+## Access in Browser
 Access in Browser
 Frontend: http://localhost:3000
-
 Backend API: http://localhost:4000/api/apartments
 
-```bash
+---
+## 📡 API Endpoints (Backend)
 API Endpoints (Backend)
 Method	Route	Description
 GET	/api/apartments	List all apartments
