@@ -1,20 +1,32 @@
-# 🏠 Apartment Listings App — Assignment
+# 🏠 Apartment Listings App
 
-This is a full-stack apartment listings app built for the Nawy Software Engineer assignment.
+A modern, full-stack apartment listing web application where users can view, add, edit, and delete apartments. It features a responsive design, search functionality, and clean UI/UX — fully containerized for seamless deployment.
 
-##  Tech Stack
-
-- **Frontend**: Next.js + Tailwind CSS (TypeScript)
-- **Backend**: Node.js + Express (TypeScript)
-- **Database**: MongoDB
-- **Containerized with**: Docker + Docker Compose
+---
 
 ## Features
 
-- View, add, edit, and delete apartment listings
-- Search functionality by unit name, unit number, or project
-- Responsive and mobile-friendly UI
-- Clean code structure & API
+-  Apartment listing with photo, area, project, and details
+-  Search & filter by unit name, unit number, or project
+-  Add, ✏️ Edit, and ❌ Delete apartments
+-  Fully responsive and mobile-friendly design
+-  Dockerized: runs backend, frontend, and MongoDB with one command
+-  Built with Tailwind CSS for fast and consistent styling
+
+---
+
+## Tech Stack
+
+| Layer       | Stack                                   |
+|-------------|------------------------------------------|
+| Frontend    | [Next.js](https://nextjs.org/), React, Tailwind CSS |
+| Backend     | [Node.js](https://nodejs.org/), Express.js, TypeScript |
+| Database    | [MongoDB](https://www.mongodb.com/) + Mongoose |
+| Deployment  | Docker & Docker Compose |
+
+---
+
+
 
 ##  Getting Started
 
@@ -45,3 +57,20 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/shwehy/apartment-listing-app.git
 cd apartment-listings-app
+docker-compose up --build
+
+---
+Access in Browser
+Frontend: http://localhost:3000
+
+Backend API: http://localhost:4000/api/apartments
+
+```bash
+API Endpoints (Backend)
+Method	Route	Description
+GET	/api/apartments	List all apartments
+GET	/api/apartments/:id	Get apartment details
+POST	/api/apartments	Add a new apartment
+PUT	/api/apartments/:id	Update apartment
+DELETE	/api/apartments/:id	Delete apartment
+
