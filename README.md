@@ -66,12 +66,14 @@ Frontend: http://localhost:3000
 Backend API: http://localhost:4000/api/apartments
 
 ---
-## 📡 API Endpoints (Backend)
-API Endpoints (Backend)
-Method	Route	Description
-GET	/api/apartments	List all apartments
-GET	/api/apartments/:id	Get apartment details
-POST	/api/apartments	Add a new apartment
-PUT	/api/apartments/:id	Update apartment
-DELETE	/api/apartments/:id	Delete apartment
+##  API Endpoints (Backend)
+
+| Method | Route                     | Description            |
+|--------|---------------------------|------------------------|
+| GET    | `/api/apartments`         | List all apartments    |
+| GET    | `/api/apartments/:id`     | Get apartment details  |
+| POST   | `/api/apartments`         | Add a new apartment    |
+| PUT    | `/api/apartments/:id`     | Update an apartment    |
+| DELETE | `/api/apartments/:id`     | Delete an apartment    |
+
 
