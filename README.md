@@ -89,13 +89,12 @@ the page will open , choose the json file apartments.json
 Press "Import JSON".
 Apartments will be added to the database.
 ###  Features Available
-
 - **Delete All Apartments:**  
-  Instantly clears all apartments from the database.
+    Instantly clears all apartments from the database.
 
 - **Import Apartments from JSON File:**  
-  Upload a `.json` file containing an array of apartments to bulk insert into the database.
-  ---
+    Upload a `.json` file containing an array of apartments to bulk insert into the database.
+---
 ## Add swagger documentation 
 ```bash
 Visit:
