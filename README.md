@@ -96,9 +96,9 @@ Apartments will be added to the database.
 - **Import Apartments from JSON File:**  
   Upload a `.json` file containing an array of apartments to bulk insert into the database.
   ---
-  ## Add swagger documentation 
-  ```bash
-    Visit:
-    https://editor.swagger.io/
+## Add swagger documentation 
+```bash
+Visit:
+https://editor.swagger.io/
 ```
 Add the swaggerV2.json then you will find the documentation for each api
