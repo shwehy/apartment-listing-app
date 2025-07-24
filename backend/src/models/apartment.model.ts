@@ -9,10 +9,11 @@ const apartmentSchema = new mongoose.Schema({
   area: Number,
   bedrooms: Number,
   deliveryDate: String,
-  price: {
-    type: Number,
-    required: true,
-  },
+  price:Number
+  //  {
+  //   type: Number,
+  //   required: true,
+  // },
 });
 
 

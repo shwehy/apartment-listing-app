@@ -38,4 +38,19 @@ router.delete('/:id', async (req, res) => {
   // }
 });
 
+router.delete('/',async (req,res) => {
+  await Apartment.deleteMany({});
+  res.status(200).json({ message: 'All apartments deleted' });
+});
+
+router.post('/bulk', async (req, res) => {
+    const apartments = req.body;
+    if (!Array.isArray(apartments)) {
+      return res.status(400).json({ message: 'Data must be an array of apartments' });
+    }
+
+    await Apartment.insertMany(apartments);
+    res.status(200).json({ message: 'Bulk insert successful' });
+});
+  
 export default router;
