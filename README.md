@@ -76,4 +76,22 @@ Backend API: http://localhost:4000/api/apartments
 | PUT    | `/api/apartments/:id`     | Update an apartment    |
 | DELETE | `/api/apartments/:id`     | Delete an apartment    |
 
+---
+## First add appartments from the json file 
+This project includes a simple admin interface to help manage apartment data more efficiently.
+### Accessing the Admin Panel
+```bash
+Visit:
+http://localhost:3000/admin
+```
+Or in the footer you will find Admin database Go to Admin Panel
+the page will open , choose the json file apartments.json
+Press "Import JSON".
+Apartments will be added to the database.
+###  Features Available
 
+- **Delete All Apartments:**  
+  Instantly clears all apartments from the database.
+
+- **Import Apartments from JSON File:**  
+  Upload a `.json` file containing an array of apartments to bulk insert into the database.
