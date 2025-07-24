@@ -1,7 +1,11 @@
 import axios from 'axios';
 import { useState } from 'react';
+import { useRouter } from 'next/router';
+
 
 export default function AdminPanel() {
+  const router = useRouter();
+
   const [file, setFile] = useState<File | null>(null);
   const [message, setMessage] = useState('');
 
@@ -62,7 +66,9 @@ export default function AdminPanel() {
             Import Apartments
           </button>
         </div>
-
+        <div className="flex justify-between">
+          <button type="button" onClick={() => router.back()} className="mt-3 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">← Back</button>
+        </div>
         {message && <p className="text-sm mt-4">{message}</p>}
       </div>
     </div>
