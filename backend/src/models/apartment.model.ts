@@ -8,7 +8,11 @@ const apartmentSchema = new mongoose.Schema({
   imageUrl: String,
   area: Number,
   bedrooms: Number,
-  deliveryDate: String
+  deliveryDate: String,
+  price: {
+    type: Number,
+    required: true,
+  },
 });
 
 

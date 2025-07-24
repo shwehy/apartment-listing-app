@@ -16,7 +16,8 @@ export default function EditApartment() {
     description: '',
     area: '',
     bedrooms: '',
-    deliveryDate: ''
+    deliveryDate: '',
+    price: '',
   });
 
   useEffect(() => {
@@ -31,7 +32,8 @@ export default function EditApartment() {
           description: apt.description,
           area: apt.area,
           bedrooms: apt.bedrooms,
-          deliveryDate: apt.deliveryDate
+          deliveryDate: apt.deliveryDate,
+          price: apt.price
         });
       });
     }
@@ -46,7 +48,8 @@ export default function EditApartment() {
     await axios.put(`http://localhost:4000/api/apartments/${id}`, {
       ...form,
       area: Number(form.area),
-      bedrooms: Number(form.bedrooms)
+      bedrooms: Number(form.bedrooms),
+      price: Number(form.price)
     });
     router.push('/');
   };
@@ -62,6 +65,7 @@ export default function EditApartment() {
         <input className="w-full p-2 border rounded" name="area" value={form.area} placeholder="Area (m²)" type="number" onChange={handleChange} />
         <input className="w-full p-2 border rounded" name="bedrooms" value={form.bedrooms} placeholder="Bedrooms" type="number" onChange={handleChange} />
         <input className="w-full p-2 border rounded" name="deliveryDate" value={form.deliveryDate} placeholder="Delivery Date" onChange={handleChange} />
+        <input className="w-full p-2 border rounded" name="price" placeholder="Price in EGP" type="number" value={form.price} onChange={handleChange} />
         <textarea className="w-full p-2 border rounded" name="description" value={form.description} placeholder="Description" onChange={handleChange} />
         <div className="flex justify-between">
           <button type="button" onClick={() => router.back()} className="px-4 py-2 border rounded hover:bg-gray-100">← Back</button>

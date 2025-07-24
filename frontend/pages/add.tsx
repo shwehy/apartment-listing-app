@@ -13,6 +13,7 @@ export default function AddApartment() {
     area: '',
     bedrooms: '',
     deliveryDate: '',
+    price: '',
   });
 
   const handleChange = (e: any) => {
@@ -25,6 +26,7 @@ export default function AddApartment() {
       ...form,
       area: Number(form.area),
       bedrooms: Number(form.bedrooms),
+      price: Number(form.price),
     });
     router.push('/');
   };
@@ -40,6 +42,7 @@ export default function AddApartment() {
         <input className="w-full p-2 border rounded" name="area" placeholder="Area in m²" type="number" onChange={handleChange} />
         <input className="w-full p-2 border rounded" name="bedrooms" placeholder="Bedrooms" type="number" onChange={handleChange} />
         <input className="w-full p-2 border rounded" name="deliveryDate" placeholder="Delivery Date (e.g. 2026)" onChange={handleChange} />
+        <input className="w-full p-2 border rounded" name="price" placeholder="Price in EGP" type="number" onChange={handleChange} />
         <textarea className="w-full p-2 border rounded" name="description" placeholder="Description" onChange={handleChange} />
         <div className="flex justify-between">
           <button type="button" onClick={() => router.back()} className="px-4 py-2 border rounded hover:bg-gray-100">← Back</button>

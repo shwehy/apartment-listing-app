@@ -12,6 +12,7 @@ type Apartment = {
   area: number;
   bedrooms: number;
   deliveryDate: string;
+  price : string;
 };
 
 export default function Home() {
@@ -85,7 +86,7 @@ export default function Home() {
                 <h2 className="text-xl font-semibold">{apt.unitName}</h2>
                 <p className="text-gray-600 text-sm mb-2">{apt.project}</p>
                 <div className="text-sm text-gray-700 mb-3">
-                  📏 {apt.area} m² | 🛏 {apt.bedrooms} Beds
+                  📏 {apt.area} m² | 🛏 {apt.bedrooms} Beds | 💸 {apt.price} price
                 </div>
                 <div className="flex justify-between">
                   <Link

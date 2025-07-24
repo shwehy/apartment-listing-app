@@ -12,6 +12,7 @@ type Apartment = {
   area?: number;
   bedrooms?: number;
   deliveryDate?: string;
+  price?: string;
 };
 
 export default function ApartmentDetails() {
@@ -95,6 +96,10 @@ export default function ApartmentDetails() {
         <div className="bg-gray-50 p-4 rounded shadow-sm">
           <p className="text-sm text-gray-500">🛏 Bedrooms</p>
           <p className="text-lg font-semibold">{apartment.bedrooms ?? 2}</p>
+        </div>
+        <div className="bg-gray-50 p-4 rounded shadow-sm">
+          <p className="text-sm text-gray-500">Price</p>
+          <p className="text-lg font-semibold">{apartment.price ?? 1000000} EGP</p>
         </div>
         <div className="bg-gray-50 p-4 rounded shadow-sm">
           <p className="text-sm text-gray-500">Delivery</p>
