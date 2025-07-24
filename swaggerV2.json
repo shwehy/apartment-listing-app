@@ -1,0 +1,148 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Apartment Listing API",
+    "description": "API for managing apartment listings",
+    "version": "1.0.0"
+  },
+  "host": "localhost:4000",
+  "basePath": "/api",
+  "schemes": ["http"],
+  "paths": {
+    "/apartments": {
+      "get": {
+        "summary": "Get all apartments",
+        "tags": ["Apartments"],
+        "responses": {
+          "200": {
+            "description": "List of apartments",
+            "schema": {
+              "type": "array",
+              "items": { "$ref": "#/definitions/Apartment" }
+            }
+          }
+        }
+      },
+      "post": {
+        "summary": "Add new apartment",
+        "tags": ["Apartments"],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Apartment" }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Apartment created"
+          }
+        }
+      }
+    },
+    "/apartments/{id}": {
+      "get": {
+        "summary": "Get apartment by ID",
+        "tags": ["Apartments"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Apartment found",
+            "schema": { "$ref": "#/definitions/Apartment" }
+          },
+          "404": { "description": "Apartment not found" }
+        }
+      },
+      "put": {
+        "summary": "Update apartment",
+        "tags": ["Apartments"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "required": true,
+            "schema": { "$ref": "#/definitions/Apartment" }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Apartment updated"
+          }
+        }
+      },
+      "delete": {
+        "summary": "Delete apartment",
+        "tags": ["Apartments"],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "204": { "description": "Apartment deleted" }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "Apartment": {
+      "type": "object",
+      "required": [
+        "unitName",
+        "project",
+        "area",
+        "bedrooms",
+        "deliveryDate",
+        "price"
+      ],
+      "properties": {
+        "unitName": {
+          "type": "string"
+        },
+        "unitNumber": {
+          "type": "string"
+        },
+        "project": {
+          "type": "string"
+        },
+        "imageUrl": {
+          "type": "string"
+        },
+        "description": {
+          "type": "string"
+        },
+        "area": {
+          "type": "number",
+          "format": "float"
+        },
+        "bedrooms": {
+          "type": "number"
+        },
+        "deliveryDate": {
+          "type": "string"
+        },
+        "price": {
+          "type": "number",
+          "format": "float"
+        }
+      }
+    }
+  }
+}
