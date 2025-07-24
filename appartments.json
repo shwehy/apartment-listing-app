@@ -1,0 +1,57 @@
+[
+  {
+    "unitName": "Sunset Villa",
+    "unitNumber": "A101",
+    "project": "Palm Hills",
+    "imageUrl": "https://images.unsplash.com/photo-1600585152915-d208bec867a2",
+    "description": "Spacious 3-bedroom apartment with modern amenities.",
+    "area": 180,
+    "bedrooms": 3,
+    "deliveryDate": "2026",
+    "price": 3500000
+  },
+  {
+    "unitName": "Skyline Tower",
+    "unitNumber": "B305",
+    "project": "Sky Heights",
+    "imageUrl": "https://images.unsplash.com/photo-1599423300746-b62533397364",
+    "description": "Elegant apartment with a panoramic city view.",
+    "area": 150,
+    "bedrooms": 2,
+    "deliveryDate": "2025",
+    "price": 2900000
+  },
+  {
+    "unitName": "Garden Residence",
+    "unitNumber": "C112",
+    "project": "Green Avenue",
+    "imageUrl": "https://images.unsplash.com/photo-1580587771525-78b9dba3b914",
+    "description": "Ground floor apartment with private garden access.",
+    "area": 120,
+    "bedrooms": 2,
+    "deliveryDate": "2024",
+    "price": 2400000
+  },
+  {
+    "unitName": "Riverfront Loft",
+    "unitNumber": "D420",
+    "project": "Nile Edge",
+    "imageUrl": "https://images.unsplash.com/photo-1586105251261-72a756497a12",
+    "description": "Luxury loft apartment overlooking the Nile.",
+    "area": 200,
+    "bedrooms": 4,
+    "deliveryDate": "2026",
+    "price": 4800000
+  },
+  {
+    "unitName": "Studio Bliss",
+    "unitNumber": "E020",
+    "project": "Urban Nest",
+    "imageUrl": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c",
+    "description": "Compact studio ideal for singles and couples.",
+    "area": 65,
+    "bedrooms": 1,
+    "deliveryDate": "2023",
+    "price": 1500000
+  }
+]
